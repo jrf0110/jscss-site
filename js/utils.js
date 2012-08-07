@@ -2,6 +2,7 @@ define(function(require){
   var
     // 3rd Party Dependencies
     $         = require('jquery')
+  , _         = require('underscore')
   , Backbone  = require('backbone')
 
     // App Dependencies
@@ -12,11 +13,13 @@ define(function(require){
 
   utils.$ = $;
 
+  utils.Model       = Backbone.Model;
+  utils.View        = Backbone.View;
+  utils.Collection  = Backbone.Collection;
+  utils.Router      = Backbone.Router;
+  utils.Events      = Backbone.Events;
 
-  utils.Model = Backbone.Model;
-  utils.View = Backbone.View;
-  utils.Collection = Backbone.Collection;
-  utils.Router = Backbone.Router;
+  _.extend(utils, _);
 
   return utils;
 });
