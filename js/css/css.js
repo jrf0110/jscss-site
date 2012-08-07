@@ -1,15 +1,15 @@
 define(function(require){
-	var
-		// 3rd Party Dependencies
+  var
+    // 3rd Party Dependencies
 
-		// App Dependencies
+    // App Dependencies
     utils       = require('utils')
   , globals     = require('css/globals')
   , grid        = require('css/grid')
   , mixins      = require('css/mixins')
   , components  = require('css/components')
 
-		// Module Variables
+    // Module Variables
   , fonts     = globals.fonts
   , color     = globals.color
   , css = {
@@ -75,7 +75,7 @@ define(function(require){
         }
       }
     }
-	;
+  ;
 
-	return utils.extend(css, grid, components);
+  return utils.extend(css, grid, components);
 });
