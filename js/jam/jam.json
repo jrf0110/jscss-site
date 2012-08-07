@@ -3,6 +3,8 @@
     "dependencies": {
         "jscss": null,
         "domReady": null,
-        "paper-boy": null
+        "paper-boy": null,
+        "ace": null,
+        "backbone": null
     }
 }
